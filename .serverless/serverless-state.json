@@ -180,9 +180,9 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/who-am-i-server-kr/dev/code-artifacts/sls-otel.0.2.2.zip"
+                "S3Key": "serverless/who-am-i-server-kr/dev/code-artifacts/sls-otel.0.2.9.zip"
               },
-              "LayerName": "sls-console-otel-extension-0-2-2"
+              "LayerName": "sls-console-otel-extension-0-2-9"
             }
           },
           "ApiLambdaFunction": {
@@ -192,7 +192,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/who-am-i-server-kr/dev/1647913263365-2022-03-22T01:41:03.365Z/who-am-i-server-kr.zip"
+                "S3Key": "serverless/who-am-i-server-kr/dev/1649124300164-2022-04-05T02:05:00.164Z/who-am-i-server-kr.zip"
               },
               "Handler": "wsgi_handler.handler",
               "Runtime": "python3.8",
@@ -210,14 +210,14 @@
               "ApiLogGroup"
             ]
           },
-          "ApiLambdaVersionm2mEVuS4t2eHWDSZmVINeFyW9uwEQskzSvhdgUXB3U": {
+          "ApiLambdaVersion4xApALpQft1Twkk8Ho0HV3i0b9gJaUng4IG1Tvlg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "UwYCR50T5/MoLrb2cP5405+lgJ+PJnK216heMs6uhHc="
+              "CodeSha256": "Gox1T+aRn1tJOPZiWHzlR6767xDUbL/80G2ohaJAjg8="
             }
           },
           "ApiGatewayRestApi": {
@@ -347,7 +347,7 @@
               "ApiLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1647913252686": {
+          "ApiGatewayDeployment1649124288152": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -410,7 +410,7 @@
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersionm2mEVuS4t2eHWDSZmVINeFyW9uwEQskzSvhdgUXB3U"
+              "Ref": "ApiLambdaVersion4xApALpQft1Twkk8Ho0HV3i0b9gJaUng4IG1Tvlg"
             },
             "Export": {
               "Name": "sls-who-am-i-server-kr-dev-ApiLambdaFunctionQualifiedArn"
@@ -563,7 +563,7 @@
         "timeout": 6,
         "runtime": "python3.8",
         "vpc": {},
-        "versionLogicalId": "ApiLambdaVersionm2mEVuS4t2eHWDSZmVINeFyW9uwEQskzSvhdgUXB3U"
+        "versionLogicalId": "ApiLambdaVersion4xApALpQft1Twkk8Ho0HV3i0b9gJaUng4IG1Tvlg"
       }
     },
     "configValidationMode": "warn",
@@ -593,13 +593,13 @@
     "artifact": "C:\\Users\\5-1\\Documents\\GitHub\\who-am-i-server-kr\\.serverless\\who-am-i-server-kr.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/who-am-i-server-kr/dev/1647913263365-2022-03-22T01:41:03.365Z",
+    "artifactDirectoryName": "serverless/who-am-i-server-kr/dev/1649124300164-2022-04-05T02:05:00.164Z",
     "artifact": "who-am-i-server-kr.zip"
   },
   "console": {
     "schemaVersion": "1",
     "otelIngestionToken": "ca000ead-919c-4f7e-b030-67f641cd4ecd",
-    "extensionLayerVersionPostfix": "0.2.2",
+    "extensionLayerVersionPostfix": "0.2.9",
     "service": "who-am-i-server-kr",
     "stage": "dev",
     "orgId": "4f83568c-47c3-4027-b305-1baa73a413cd"
