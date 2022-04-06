@@ -4,7 +4,7 @@
 ## 서버 아키텍쳐
 ![서버 아키텍쳐 사진](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdlue4y%2FbtryxJr3GzK%2F7HCmPSosV2CyklFp1z6UL1%2Fimg.jpg)
 
-로컬서버에서의 테스트를 충분히 한 후 npm기반의 패키지인 Serverless Framework를 사용하기 위해 npm을 설치 후 Serverless Framework를 설치하여 AWS Lambda로 서버 배포했습니다.
+로컬서버에서의 테스트를 충분히 한 후 npm기반의 패키지인 Serverless Framework를 사용하기 위해 npm을 설치 후 Serverless Framework를 설치하여 AWS Lambda로 서버 배포했습니다.\n
 Serverless Framework는 기본적으로 미국동부 서버만 지원하기 때문에 serverless.yml에서 region을 서울로 따로 설정해주어서 미국동부 서버보다 응답 속도를 빠르게 했습니다.
 Serverless에 GitHub를 연동해 푸쉬할 경우에 자동으로 업데이트가 되어 CI/CD가 되도록 하였습니다.
 Lambda 서버는 requirements에 라이브러리가 50mb를 넘기면 에러가 생기기 때문에 Lambda서버와 환경이 같은 AWS EC2에서 프로젝트에 필요한 라이브러리를 설치하고 설치한 파일들을 압축 후 S3에 업로드하고 Lambda Layer 파이썬 버전 3.8.8에 맞게 추가해서 해결하였습니다.
