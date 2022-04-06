@@ -3,8 +3,8 @@ class Config :
 
     JWT_SECRET_KEY = 'who_am_i_user'
     JWT_ACCESS_TOKEN_EXPIRES = False
-    ACCESS_KEY = "AKIAYO4EJD54A3QAVGD3"
-    SECRET_ACCESS = "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"
+    ACCESS_KEY = "ACCESS_KEY"
+    SECRET_ACCESS = "wkC/SECRET_ACCESS"
 
     S3_BUCKET = "who-am-i-kr-data"
     S3_LOCATION = 'https://{}.s3.amazonaws.com/'.format(S3_BUCKET)
