@@ -2,10 +2,11 @@ import os
 import sys
 import urllib.request
 import json
+from config import Config
 
 def papago(names):
-    client_id = "BnvRId5pCJs5JpXvPMPu" # 개발자센터에서 발급받은 Client ID 값
-    client_secret = "eWb0AwvaA5" # 개발자센터에서 발급받은 Client Secret 값
+    client_id = Config.client_id # 개발자센터에서 발급받은 Client ID 값
+    client_secret = Config.client_secret # 개발자센터에서 발급받은 Client Secret 값
 
     encText = urllib.parse.quote(names)
 
